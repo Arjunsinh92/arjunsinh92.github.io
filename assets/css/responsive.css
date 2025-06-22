@@ -167,7 +167,7 @@
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
   }
   .ms-hero .hero-content .ms-hero-detail .ms-hero-title span br {
     display: none;
