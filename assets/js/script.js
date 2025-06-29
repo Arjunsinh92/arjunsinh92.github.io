@@ -38,7 +38,6 @@
     $(".ms-sidebar-toggle").on("click", function () {
         $(".ms-sidebar-overlay").fadeIn();
         $(".ms-sidebar").addClass("ms-open");
-        $('nav.mobile-menu').hide();
     });
 
     $(".close-sidebar, .nav-link.ms-nav").on("click", function () {

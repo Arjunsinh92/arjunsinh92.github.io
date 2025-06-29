@@ -1366,8 +1366,8 @@ header nav a:hover .svg_img {
 .ms-experience .timeline li:last-child {
   margin: 0;
 }*/
-.ms-experience .timeline li .timeline-info {
-  margin-top: 10px;
+#experience .timeline li .timeline-info {
+  margin-top: -40px;
   margin-bottom: 30px;
 }
 .ms-experience .timeline li .timeline-info span {
@@ -2523,6 +2523,7 @@ html, body {
   padding: 0;
   list-style: none;
   justify-content: center;
+  margin: 0;
 }
 
 #education .timeline-item {
@@ -2530,7 +2531,7 @@ html, body {
   border-radius: 16px;
   padding: 24px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  flex: 1 1 calc(33.333% - 30px); /* 3 per row */
+  flex: 1 1 calc(33.333% - 30px); /* Default: 3 per row */
   max-width: calc(33.333% - 30px);
   box-sizing: border-box;
   position: relative;
@@ -2543,10 +2544,9 @@ html, body {
 
 #education .timeline-info {
   position: absolute;
-  top: -20px;
+  top: -10px;
   left: 24px;
   background: #f3f3f3;
-
   border-radius: 30px;
   font-weight: bold;
   font-size: 14px;
@@ -2560,5 +2560,31 @@ html, body {
   font-size: 18px;
   margin-top: 24px;
 }
+
+/* Tablet: 2 per row */
+@media (max-width: 991px) {
+  #education .timeline-item {
+    flex: 1 1 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 575px) {
+  #education .timeline-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  #education .timeline-info {
+    left: 16px;
+    font-size: 12px;
+  }
+
+  #education .timeline-title {
+    font-size: 16px;
+  }
+}
+
 
 
