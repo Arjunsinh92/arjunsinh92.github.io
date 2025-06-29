@@ -2417,7 +2417,7 @@ html, body {
 
 /* Sticky background color */
 .navbar.sticky-bg {
-  background-color: rgba(78, 79, 94, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   color: #fff !important;
 }
 
@@ -2446,7 +2446,7 @@ html, body {
 
 /* Sticky nav link override */
 .navbar.sticky-bg .nav-links li a {
-  color: #fff;
+  color: #000;
 }
 
 /* Hover effect */
@@ -2505,6 +2505,11 @@ html, body {
   .navbar {
     justify-content: space-between;
     padding: 12px 20px;
+  }
+  .navbar.sticky-bg {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #fff !important;
+              z-index: 9;
   }
 }
 @media only screen and (max-width: 575px) {
